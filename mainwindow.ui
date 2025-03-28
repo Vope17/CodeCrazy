@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1008</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CodeCrazy</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="MainPage_stackedWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1008</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Problem_Menu">
+    <property name="title">
+     <string>題目</string>
+    </property>
+    <addaction name="All_Problem_Action"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="Setting_Menu">
+    <property name="title">
+     <string>設定</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="Help_Menu">
+    <property name="title">
+     <string>幫助</string>
+    </property>
+    <addaction name="AboutThis_Action"/>
+   </widget>
+   <widget class="QMenu" name="Contest_Menu">
+    <property name="title">
+     <string>比賽</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Statistics_Menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>統計</string>
+    </property>
+    <addaction name="Submission_Action"/>
+   </widget>
+   <addaction name="Problem_Menu"/>
+   <addaction name="Contest_Menu"/>
+   <addaction name="Statistics_Menu"/>
+   <addaction name="Setting_Menu"/>
+   <addaction name="Help_Menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="All_Problem_Action">
+   <property name="text">
+    <string>全部題目</string>
+   </property>
+  </action>
+  <action name="Submission_Action">
+   <property name="text">
+    <string>提交紀錄</string>
+   </property>
+  </action>
+  <action name="AboutThis_Action">
+   <property name="text">
+    <string>關於</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>編譯器</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>文字編輯器</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

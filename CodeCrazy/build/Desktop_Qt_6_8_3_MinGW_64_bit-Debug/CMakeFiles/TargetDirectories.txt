@@ -1,0 +1,9 @@
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/CodeCrazy.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/CodeCrazy_autogen_timestamp_deps.dir
+C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/CodeCrazy_autogen.dir
