@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::SolvingDialog *ui;
+
+public slots:
+    void createNewTab(const QString &problem_name);
 };
 
 #endif // SOLVINGDIALOG_H

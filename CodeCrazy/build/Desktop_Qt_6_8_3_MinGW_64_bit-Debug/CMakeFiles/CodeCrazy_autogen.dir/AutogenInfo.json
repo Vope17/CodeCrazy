@@ -308,6 +308,12 @@
 			null
 		],
 		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.h",
+			"MU",
+			"EWIEGA46WW/moc_codesyntaxhighlighter.cpp",
+			null
+		],
+		[
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/homewidget.h",
 			"MU",
 			"EWIEGA46WW/moc_homewidget.cpp",
@@ -335,6 +341,12 @@
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/solvingdialog.h",
 			"MU",
 			"EWIEGA46WW/moc_solvingdialog.cpp",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/solvingwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_solvingwidget.cpp",
 			null
 		],
 		[
@@ -421,6 +433,11 @@
 			null
 		],
 		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/homewidget.cpp",
 			"MU",
 			null
@@ -443,6 +460,11 @@
 		],
 		[
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/solvingdialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/solvingwidget.cpp",
 			"MU",
 			null
 		],

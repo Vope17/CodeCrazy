@@ -146,8 +146,10 @@ C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_Min
   C:/Qt/6.8.3/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.3/mingw_64/include/QtWidgets/QButtonGroup \
   C:/Qt/6.8.3/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.8.3/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.3/mingw_64/include/QtWidgets/qbuttongroup.h \
   C:/Qt/6.8.3/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.3/mingw_64/include/QtWidgets/qtwidgets-config.h \

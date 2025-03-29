@@ -7,9 +7,13 @@ ProblemWidget::ProblemWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    m_problemButtonGroup = new QButtonGroup(this);
+    m_solvingDialog = new SolvingDialog(this);
 
+    m_problemButtonGroup->addButton(ui->Example1_Problem_PushButton);
 
-    connect(ui->Example1_Problem_PushButton, &QPushButton::clicked, this, &ProblemWidget::openNewSolvingDialog);
+    connect(m_problemButtonGroup, &QButtonGroup::buttonClicked, this, &ProblemWidget::handleProblemButtonClicked);
+    connect(this, &ProblemWidget::createSolvingTab, m_solvingDialog, &SolvingDialog::createNewTab);
 }
 
 ProblemWidget::~ProblemWidget()
@@ -17,10 +21,12 @@ ProblemWidget::~ProblemWidget()
     delete ui;
 }
 
-bool ProblemWidget::openNewSolvingDialog()
+void ProblemWidget::handleProblemButtonClicked(QAbstractButton *button)
 {
-    solving_dialog = new SolvingDialog(this);
-
-    solving_dialog->show();
-    return false;
+    if (m_solvingDialog == nullptr)
+    {
+        m_solvingDialog = new SolvingDialog(this);
+    }
+    emit createSolvingTab(button->text());
+    m_solvingDialog->show();
 }

@@ -4,6 +4,7 @@
 #include "solvingdialog.h"
 
 #include <QWidget>
+#include <QButtonGroup>
 
 
 namespace Ui {
@@ -22,12 +23,14 @@ private:
 
     Ui::ProblemWidget *ui;
 
-    SolvingDialog *solving_dialog;
+    SolvingDialog *m_solvingDialog = nullptr;
+    QButtonGroup *m_problemButtonGroup = nullptr;
 
+signals:
+    void createSolvingTab(const QString &problem_name);
 
-private:
-
-    bool openNewSolvingDialog();
+private slots:
+    void handleProblemButtonClicked(QAbstractButton *button);
 };
 
 #endif // PROBLEMWIDGET_H

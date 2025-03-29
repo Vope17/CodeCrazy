@@ -121,6 +121,22 @@ build CMakeFiles/CodeCrazy.dir/solvingdialog.cpp.obj: CXX_COMPILER__CodeCrazy_un
   OBJECT_DIR = CMakeFiles\CodeCrazy.dir
   OBJECT_FILE_DIR = CMakeFiles\CodeCrazy.dir
 
+build CMakeFiles/CodeCrazy.dir/solvingwidget.cpp.obj: CXX_COMPILER__CodeCrazy_unscanned_Debug C$:/Users/kkeea/Desktop/QtProjects/CodeCrazy/solvingwidget.cpp || cmake_object_order_depends_target_CodeCrazy
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\CodeCrazy.dir\solvingwidget.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CodeCrazy_autogen/include -isystem C:/Qt/6.8.3/mingw_64/include/QtCore -isystem C:/Qt/6.8.3/mingw_64/include -isystem C:/Qt/6.8.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\CodeCrazy.dir
+  OBJECT_FILE_DIR = CMakeFiles\CodeCrazy.dir
+
+build CMakeFiles/CodeCrazy.dir/codesyntaxhighlighter.cpp.obj: CXX_COMPILER__CodeCrazy_unscanned_Debug C$:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.cpp || cmake_object_order_depends_target_CodeCrazy
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\CodeCrazy.dir\codesyntaxhighlighter.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CodeCrazy_autogen/include -isystem C:/Qt/6.8.3/mingw_64/include/QtCore -isystem C:/Qt/6.8.3/mingw_64/include -isystem C:/Qt/6.8.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\CodeCrazy.dir
+  OBJECT_FILE_DIR = CMakeFiles\CodeCrazy.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CodeCrazy
@@ -129,7 +145,7 @@ build CMakeFiles/CodeCrazy.dir/solvingdialog.cpp.obj: CXX_COMPILER__CodeCrazy_un
 #############################################
 # Link the executable CodeCrazy.exe
 
-build CodeCrazy.exe: CXX_EXECUTABLE_LINKER__CodeCrazy_Debug CMakeFiles/CodeCrazy.dir/CodeCrazy_autogen/mocs_compilation.cpp.obj CMakeFiles/CodeCrazy.dir/main.cpp.obj CMakeFiles/CodeCrazy.dir/mainwindow.cpp.obj CMakeFiles/CodeCrazy.dir/logindialog.cpp.obj CMakeFiles/CodeCrazy.dir/problemwidget.cpp.obj CMakeFiles/CodeCrazy.dir/homewidget.cpp.obj CMakeFiles/CodeCrazy.dir/submissionwidget.cpp.obj CMakeFiles/CodeCrazy.dir/aboutdialog.cpp.obj CMakeFiles/CodeCrazy.dir/solvingdialog.cpp.obj | C$:/Qt/6.8.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.3/mingw_64/lib/libQt6EntryPoint.a || CodeCrazy_autogen CodeCrazy_autogen_timestamp_deps
+build CodeCrazy.exe: CXX_EXECUTABLE_LINKER__CodeCrazy_Debug CMakeFiles/CodeCrazy.dir/CodeCrazy_autogen/mocs_compilation.cpp.obj CMakeFiles/CodeCrazy.dir/main.cpp.obj CMakeFiles/CodeCrazy.dir/mainwindow.cpp.obj CMakeFiles/CodeCrazy.dir/logindialog.cpp.obj CMakeFiles/CodeCrazy.dir/problemwidget.cpp.obj CMakeFiles/CodeCrazy.dir/homewidget.cpp.obj CMakeFiles/CodeCrazy.dir/submissionwidget.cpp.obj CMakeFiles/CodeCrazy.dir/aboutdialog.cpp.obj CMakeFiles/CodeCrazy.dir/solvingdialog.cpp.obj CMakeFiles/CodeCrazy.dir/solvingwidget.cpp.obj CMakeFiles/CodeCrazy.dir/codesyntaxhighlighter.cpp.obj | C$:/Qt/6.8.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.3/mingw_64/lib/libQt6EntryPoint.a || CodeCrazy_autogen CodeCrazy_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.8.3/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.3/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.8.3/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -216,7 +232,7 @@ build CodeCrazy_autogen_timestamp_deps: phony
 #############################################
 # Utility command for CodeCrazy_autogen
 
-build CodeCrazy_autogen: phony CMakeFiles/CodeCrazy_autogen CodeCrazy_autogen/include/ui_mainwindow.h CodeCrazy_autogen/include/ui_logindialog.h CodeCrazy_autogen/include/ui_problemwidget.h CodeCrazy_autogen/include/ui_homewidget.h CodeCrazy_autogen/include/ui_submissionwidget.h CodeCrazy_autogen/include/ui_aboutdialog.h CodeCrazy_autogen/include/ui_solvingdialog.h CodeCrazy_autogen/timestamp CodeCrazy_autogen/mocs_compilation.cpp CodeCrazy_autogen_timestamp_deps
+build CodeCrazy_autogen: phony CMakeFiles/CodeCrazy_autogen CodeCrazy_autogen/include/ui_mainwindow.h CodeCrazy_autogen/include/ui_logindialog.h CodeCrazy_autogen/include/ui_problemwidget.h CodeCrazy_autogen/include/ui_homewidget.h CodeCrazy_autogen/include/ui_submissionwidget.h CodeCrazy_autogen/include/ui_aboutdialog.h CodeCrazy_autogen/include/ui_solvingdialog.h CodeCrazy_autogen/include/ui_solvingwidget.h CodeCrazy_autogen/timestamp CodeCrazy_autogen/mocs_compilation.cpp CodeCrazy_autogen_timestamp_deps
 
 
 #############################################
@@ -233,7 +249,7 @@ build CodeCrazy_autogen/timestamp CodeCrazy_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles\CodeCrazy_autogen
 
-build CMakeFiles/CodeCrazy_autogen CodeCrazy_autogen/include/ui_mainwindow.h CodeCrazy_autogen/include/ui_logindialog.h CodeCrazy_autogen/include/ui_problemwidget.h CodeCrazy_autogen/include/ui_homewidget.h CodeCrazy_autogen/include/ui_submissionwidget.h CodeCrazy_autogen/include/ui_aboutdialog.h CodeCrazy_autogen/include/ui_solvingdialog.h | ${cmake_ninja_workdir}CMakeFiles/CodeCrazy_autogen ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_logindialog.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_problemwidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_homewidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_submissionwidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_aboutdialog.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_solvingdialog.h: phony CodeCrazy_autogen/timestamp || CodeCrazy_autogen_timestamp_deps
+build CMakeFiles/CodeCrazy_autogen CodeCrazy_autogen/include/ui_mainwindow.h CodeCrazy_autogen/include/ui_logindialog.h CodeCrazy_autogen/include/ui_problemwidget.h CodeCrazy_autogen/include/ui_homewidget.h CodeCrazy_autogen/include/ui_submissionwidget.h CodeCrazy_autogen/include/ui_aboutdialog.h CodeCrazy_autogen/include/ui_solvingdialog.h CodeCrazy_autogen/include/ui_solvingwidget.h | ${cmake_ninja_workdir}CMakeFiles/CodeCrazy_autogen ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_logindialog.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_problemwidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_homewidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_submissionwidget.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_aboutdialog.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_solvingdialog.h ${cmake_ninja_workdir}CodeCrazy_autogen/include/ui_solvingwidget.h: phony CodeCrazy_autogen/timestamp || CodeCrazy_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

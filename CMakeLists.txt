@@ -29,6 +29,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         submissionwidget.h submissionwidget.cpp submissionwidget.ui
         aboutdialog.h aboutdialog.cpp aboutdialog.ui
         solvingdialog.h solvingdialog.cpp solvingdialog.ui
+        solvingwidget.h solvingwidget.cpp solvingwidget.ui
+        codesyntaxhighlighter.h codesyntaxhighlighter.cpp
 
 
     )
