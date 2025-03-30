@@ -6,16 +6,21 @@ SolvingWidget::SolvingWidget(QWidget *parent)
     , ui(new Ui::SolvingWidget)
 {
     ui->setupUi(this);
+
+    //compileErrorWidget.hide();
+    //codeOutputWidget.hide();
+
     connect(ui->Compile_Buttion, &QPushButton::clicked, this, &SolvingWidget::compileCode);
 
     // Init Compiler process
-    compiler = new QProcess(this);
-    connect(compiler, &QProcess::readyReadStandardOutput,
+    compiler = new CompilerProcess(this);
+    connect(compiler, &CompilerProcess::outputReceived,
             this, &SolvingWidget::handleCompileOutput);
-    connect(compiler, &QProcess::readyReadStandardError,
+
+    connect(compiler, &CompilerProcess::outputReceived,
             this, &SolvingWidget::handleCompileError);
-    connect(compiler, static_cast<void(QProcess::*)(int, QProcess::ExitStatus)>
-            (&QProcess::finished),
+
+    connect(compiler, &CompilerProcess::compileFinished,
             this, &SolvingWidget::compilationFinished);
 
     // Code Syntax Highlight
@@ -25,86 +30,83 @@ SolvingWidget::SolvingWidget(QWidget *parent)
 SolvingWidget::~SolvingWidget()
 {
     delete ui;
-    if (compiler->state() == QProcess::Running)
-    {
-        compiler->kill();
-    }
-
-    if (!tempFilePath.isEmpty() && QFile::exists(tempFilePath))
-    {
-        QFile::remove(tempFilePath);
-    }
 }
 
 void SolvingWidget::compileCode()
 {
     ui->Compile_Buttion->setEnabled(false);
-    ui->Output_Display_TextBrowser->clear();
+
     QString sourceCode = ui->CodeEditor_TextEdit->toPlainText();
     if (sourceCode.trimmed().isEmpty())
     {
-        ui->Output_Display_TextBrowser->append("Error: No Input");
+    //    ui->Output_Display_TextBrowser->append("Error: No Input");
         ui->Compile_Buttion->setEnabled(true);
         return;
     }
-
-    QTemporaryFile sourceFile;
-    sourceFile.setFileTemplate(QDir::tempPath() + "/XXXXXX.cpp");
-    sourceFile.setAutoRemove(false);  // 不要自動刪除
-
-    if (!sourceFile.open()) {
-        ui->Output_Display_TextBrowser->append("錯誤：無法創建臨時文件！");
-        ui->Compile_Buttion->setEnabled(true);
-        return;
-    }
-
-    // Write the code into temporary file
-    QTextStream stream(&sourceFile);
-    stream << sourceCode;
-    sourceFile.close();
-
-    tempFilePath = sourceFile.fileName();
-    QString outputPath = QFileInfo(tempFilePath).path() + "/output.exe";
-
-    // Setting argumetns
-    QStringList arguments;
-    arguments << tempFilePath
-              << "-o" << outputPath
-              << "-Wall"
-              << "-Wextra"
-              << "-std=c++17";
-
-    qDebug() << arguments;
-    ui->Output_Display_TextBrowser->append("正在編譯...\n");
 
     // Start
-    compiler->start("g++", arguments);
+    compiler->compile(sourceCode);
 }
 
-void SolvingWidget::handleCompileOutput()
+void SolvingWidget::handleCompileOutput(const QString &output)
 {
-    QString output = QString::fromLocal8Bit(compiler->readAllStandardOutput());
-    ui->Output_Display_TextBrowser->append(output);
+    //ui->Output_Display_TextBrowser->append(output);
 }
 
-void SolvingWidget::handleCompileError()
+void SolvingWidget::handleCompileError(const QString &output)
 {
-    QString error = QString::fromLocal8Bit(compiler->readAllStandardError());
-    ui->Output_Display_TextBrowser->append("<span style='color: red'>" + error + "</span>");
+    compileErrorWidget.setErrorMessage(output);
 }
 
-void SolvingWidget::compilationFinished(int exitCode, QProcess::ExitStatus exitStatus)
+void SolvingWidget::compilationFinished(int exitCode, QProcess::ExitStatus exitStatus, const QString &tempFilePath)
 {
     ui->Compile_Buttion->setEnabled(true);
 
-    if (exitStatus == QProcess::NormalExit && exitCode == 0) {
-        ui->Output_Display_TextBrowser->append("<span style='color: green'>編譯成功！</span>");
-        QString outputPath = QFileInfo(tempFilePath).path() + "/output.exe";
-        ui->Output_Display_TextBrowser->append("可執行文件位置：" + outputPath);
-    } else {
-        ui->Output_Display_TextBrowser->append("<span style='color: red'>編譯失敗！</span>");
+    while (ui->Code_Output_VerticalLayout->count() > 0)
+    {
+        QWidget *widget = ui->Code_Output_VerticalLayout->itemAt(0)->widget();
+        if (widget)
+        {
+            ui->Code_Output_VerticalLayout->removeWidget(widget);
+            widget->hide();
+        }
     }
 
-    // 清理臨時源代碼文件
+    if (exitStatus == QProcess::NormalExit && exitCode == 0)
+    {
+        // If compilation success, execute it
+        //ui->Output_Display_TextBrowser->append("<span style='color: green'>編譯成功！</span>");
+        qDebug() << "編譯成功";
+        QString outputPath = QFileInfo(tempFilePath).path() + "/output.exe";
+
+        QProcess *process = new QProcess(this);
+        // Merge stdout and stderr
+        process->setProcessChannelMode(QProcess::MergedChannels);
+
+        // TODO: 連接 readyRead 信號，持續讀取執行的輸出並將之加入到 TextBrowser
+        connect(process, &QProcess::readyRead, [=]() {
+            QByteArray output = process->readAll();
+            //ui->Output_Display_TextBrowser->append(QString::fromLocal8Bit(output));
+        });
+
+        // Delete this process after execution
+        connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+                [=](int exitCode, QProcess::ExitStatus exitStatus) {
+                    //ui->Output_Display_TextBrowser->append(QString("<span style='color: blue'>執行結束，退出碼：%1</span>").arg(exitCode));
+                    process->deleteLater();
+                });
+
+        // Start
+        process->start(outputPath);
+        ui->Code_Output_VerticalLayout->addWidget(&codeOutputWidget);
+        codeOutputWidget.show();
+    }
+    else
+    {
+        ui->Code_Output_VerticalLayout->addWidget(&compileErrorWidget);
+        qDebug() << "編譯失敗";
+        compileErrorWidget.show();
+    }
+    // Remove temporary file
     QFile::remove(tempFilePath);
 }

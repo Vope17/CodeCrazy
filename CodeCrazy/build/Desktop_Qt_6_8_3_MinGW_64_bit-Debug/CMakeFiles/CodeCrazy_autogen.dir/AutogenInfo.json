@@ -308,9 +308,27 @@
 			null
 		],
 		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codeoutputwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_codeoutputwidget.cpp",
+			null
+		],
+		[
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.h",
 			"MU",
 			"EWIEGA46WW/moc_codesyntaxhighlighter.cpp",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compileerrorwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_compileerrorwidget.cpp",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compilerprocess.h",
+			"MU",
+			"EWIEGA46WW/moc_compilerprocess.cpp",
 			null
 		],
 		[
@@ -433,7 +451,22 @@
 			null
 		],
 		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codeoutputwidget.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compileerrorwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compilerprocess.cpp",
 			"MU",
 			null
 		],

@@ -1,6 +1,7 @@
 CodeCrazy_autogen/timestamp: \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QDebug \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QDir \
+	C:/Qt/6.8.3/mingw_64/include/QtCore/QFile \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QFileInfo \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QList \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QObject \
@@ -11,6 +12,7 @@ CodeCrazy_autogen/timestamp: \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QSizeF \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QString \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QTemporaryFile \
+	C:/Qt/6.8.3/mingw_64/include/QtCore/QTextStream \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.8.3/mingw_64/include/QtCore/q20iterator.h \
@@ -643,8 +645,14 @@ CodeCrazy_autogen/timestamp: \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CodeCrazy_autogen/moc_predefs.h \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/aboutdialog.cpp \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/aboutdialog.h \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codeoutputwidget.cpp \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codeoutputwidget.h \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.cpp \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codesyntaxhighlighter.h \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compileerrorwidget.cpp \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compileerrorwidget.h \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compilerprocess.cpp \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compilerprocess.h \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/homewidget.cpp \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/homewidget.h \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/logindialog.cpp \
@@ -661,6 +669,8 @@ CodeCrazy_autogen/timestamp: \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/submissionwidget.cpp \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/submissionwidget.h \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/aboutdialog.ui \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/codeoutputwidget.ui \
+	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/compileerrorwidget.ui \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/homewidget.ui \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/logindialog.ui \
 	C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/mainwindow.ui \

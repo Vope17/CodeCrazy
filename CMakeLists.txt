@@ -31,6 +31,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         solvingdialog.h solvingdialog.cpp solvingdialog.ui
         solvingwidget.h solvingwidget.cpp solvingwidget.ui
         codesyntaxhighlighter.h codesyntaxhighlighter.cpp
+        compilerprocess.h compilerprocess.cpp
+        codeoutputwidget.h codeoutputwidget.cpp codeoutputwidget.ui
+        compileerrorwidget.h compileerrorwidget.cpp compileerrorwidget.ui
+
 
 
     )

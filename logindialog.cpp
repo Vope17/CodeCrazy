@@ -56,7 +56,7 @@ void LoginDialog::onGuestLoginButtonClicked()
 void LoginDialog::onCancelButtonClicked()
 {
     clearInputs();
-    reject();  // 關閉對話框並返回 Rejected
+    reject();
 }
 
 bool LoginDialog::validateCredentials(const QString &username, const QString &password)

@@ -8,7 +8,7 @@ ProblemWidget::ProblemWidget(QWidget *parent)
     ui->setupUi(this);
 
     m_problemButtonGroup = new QButtonGroup(this);
-    m_solvingDialog = new SolvingDialog(this);
+    m_solvingDialog = new SolvingDialog();
 
     m_problemButtonGroup->addButton(ui->Example1_Problem_PushButton);
 

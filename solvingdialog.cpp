@@ -8,6 +8,16 @@ SolvingDialog::SolvingDialog(QWidget *parent)
     , ui(new Ui::SolvingDialog)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::Window |
+                         Qt::WindowTitleHint |
+                         Qt::WindowCloseButtonHint |
+                         Qt::WindowMinimizeButtonHint |
+                         Qt::WindowMaximizeButtonHint);
+
+    currentTabCount = 0;
+
+    // tabwidget close event
+    connect(ui->Problem_TabWidget, &QTabWidget::tabCloseRequested, this, &SolvingDialog::closeProblemTab);
 }
 
 SolvingDialog::~SolvingDialog()
@@ -19,4 +29,17 @@ void SolvingDialog::createNewTab(const QString &probleName)
 {
     SolvingWidget *newWidget = new SolvingWidget(this);
     ui->Problem_TabWidget->addTab(newWidget, probleName);
+    currentTabCount++;
+}
+
+void SolvingDialog::closeProblemTab(int index)
+{
+    QWidget *tab = ui->Problem_TabWidget->widget(index);
+    ui->Problem_TabWidget->removeTab(index);
+    tab->deleteLater();
+    currentTabCount--;
+    if (currentTabCount == 0)
+    {
+        this->hide();
+    }
 }

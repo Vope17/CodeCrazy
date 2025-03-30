@@ -18,8 +18,11 @@ public:
 private:
     Ui::SolvingDialog *ui;
 
+    int currentTabCount;
+
 public slots:
     void createNewTab(const QString &problem_name);
+    void closeProblemTab(int index);
 };
 
 #endif // SOLVINGDIALOG_H
