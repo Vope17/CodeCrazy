@@ -15,9 +15,9 @@ public:
     explicit CodeOutputWidget(QWidget *parent = nullptr);
     ~CodeOutputWidget();
 
-    void setInput();
-    void setCorrectOutput();
-    void setUserOutput();
+    void setInput(const QString &input);
+    void setCorrectOutput(const QString &correctOutput);
+    void setUserOutput(const QString &userOutput);
 
 private:
     Ui::CodeOutputWidget *ui;

@@ -86,7 +86,7 @@ void SolvingWidget::compilationFinished(int exitCode, QProcess::ExitStatus exitS
         // TODO: 連接 readyRead 信號，持續讀取執行的輸出並將之加入到 TextBrowser
         connect(process, &QProcess::readyRead, [=]() {
             QByteArray output = process->readAll();
-            //ui->Output_Display_TextBrowser->append(QString::fromLocal8Bit(output));
+            codeOutputWidget.setUserOutput(QString::fromLocal8Bit(output));
         });
 
         // Delete this process after execution

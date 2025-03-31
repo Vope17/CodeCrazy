@@ -35,7 +35,7 @@ void LoginDialog::onLoginButtonClicked()
     {
         emit loginSuccess(username, false);  // false: is not guest
         clearInputs();
-        accept(); // return accept
+        accept();
     }
     else
     {

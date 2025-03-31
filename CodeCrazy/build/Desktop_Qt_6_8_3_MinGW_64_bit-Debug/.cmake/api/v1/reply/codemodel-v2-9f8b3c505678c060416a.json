@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-794ef7b2b95506134fe4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CodeCrazy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CodeCrazy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CodeCrazy-Debug-263f25c772135d33bd7c.json",
+					"name" : "CodeCrazy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CodeCrazy_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CodeCrazy_autogen-Debug-c22d9be2653fa17fe88c.json",
+					"name" : "CodeCrazy_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CodeCrazy_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CodeCrazy_autogen_timestamp_deps-Debug-90f8447ff981a061948f.json",
+					"name" : "CodeCrazy_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kkeea/Desktop/QtProjects/CodeCrazy/CodeCrazy/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug",
+		"source" : "C:/Users/kkeea/Desktop/QtProjects/CodeCrazy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

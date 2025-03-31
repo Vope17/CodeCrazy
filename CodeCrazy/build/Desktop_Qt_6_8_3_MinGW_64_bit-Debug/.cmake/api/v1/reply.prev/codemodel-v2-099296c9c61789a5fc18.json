@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-962255da19a0ced4bf95.json",
+					"jsonFile" : "directory-.-Debug-794ef7b2b95506134fe4.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CodeCrazy::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CodeCrazy-Debug-73186b5bc5a6e338a7d8.json",
+					"jsonFile" : "target-CodeCrazy-Debug-9f568afdc596140c5a6b.json",
 					"name" : "CodeCrazy",
 					"projectIndex" : 0
 				},

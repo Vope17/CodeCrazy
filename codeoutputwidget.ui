@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,7 +45,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QTextBrowser" name="textBrowser_2">
+      <widget class="QTextBrowser" name="Input_TextBrowser">
        <property name="placeholderText">
         <string>Input</string>
        </property>
@@ -59,7 +59,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QTextBrowser" name="textBrowser_3">
+      <widget class="QTextBrowser" name="CorrectOutput_TextBrowser">
        <property name="placeholderText">
         <string>Correct Output</string>
        </property>
@@ -73,7 +73,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QTextBrowser" name="textBrowser_4">
+      <widget class="QTextBrowser" name="UserOutput_TextBrowser">
        <property name="placeholderText">
         <string>Your Output</string>
        </property>

@@ -30,6 +30,9 @@
     </rect>
    </property>
    <widget class="QMenu" name="Problem_Menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>題目</string>
     </property>
@@ -37,6 +40,9 @@
     <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="Setting_Menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>設定</string>
     </property>
